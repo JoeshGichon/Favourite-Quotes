@@ -5,7 +5,8 @@
         <div>
             <app-quote-detail *ngIf='quote.showDescription' [quoteAuthor]='quote ' (isComplete) = 'completeGoal($event,i)'></app-quote-detail>
         </div>
-        
+        <p>Likes:{{ quote.upVote }}</p>
+        <p>Dislikes:{{ quote.downVote }}</p>
         <hr>
     </li>
 </div>

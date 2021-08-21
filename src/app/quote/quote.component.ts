@@ -9,11 +9,11 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote("If you're already a front-end developer, well, pretend you're also wearing a pirate hat."," Ethan Marcotte"
+    new Quote("If you're already a front-end developer, well, pretend you're also wearing a pirate hat."," Ethan Marcotte",0,0
     ),
-    new Quote("Let us take you into a deeper experience, make a moment a lasting conveyable memory. Let us help build your tribe.","Deep Immersion"
+    new Quote("Let us take you into a deeper experience, make a moment a lasting conveyable memory. Let us help build your tribe.","Deep Immersion",0,0
     ),
-    new Quote("We love what we do and we do what our clients love & work with great clients all over the world to create thoughtful and purposeful websites." ,"Dr. Christopher Dayagdag"
+    new Quote("We love what we do and we do what our clients love & work with great clients all over the world to create thoughtful and purposeful websites." ,"Dr. Christopher Dayagdag",0,0
     ),
   ]
 
