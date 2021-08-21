@@ -5,6 +5,14 @@ import { Directive,ElementRef,HostListener } from '@angular/core';
 })
 export class DownvoteDirective {
 
-  constructor() { }
+  constructor(public elem:ElementRef) { }
+
+  downVoteValue = 0;
+
+  @HostListener("click") onClicks(){
+    
+    this.elem.nativeElement.style.textDecoration='line-through';
+
+  }
 
 }
