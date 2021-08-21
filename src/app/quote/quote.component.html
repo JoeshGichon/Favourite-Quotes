@@ -1,4 +1,4 @@
-<div id="quote">
+<div class="container" id="quote">
     <li *ngFor="let quote of quotes;let i = index">
         <h1>Created on:{{ quote.createdDate|date|uppercase }}. </h1>
         <p>{{ quote.quote }}</p>
@@ -11,4 +11,7 @@
         <p appDownvote>Dislikes:{{ quote.downVote }}</p>
         <hr>
     </li>
+</div>
+<div class="container">
+    <app-quote-form></app-quote-form>
 </div>
