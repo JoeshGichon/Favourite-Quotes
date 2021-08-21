@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter  } from '@angular/core';
 import { Quote } from '../quote';
 
 @Component({
@@ -21,6 +21,11 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
 
+  completeGoal(isComplete, index){
+    if (isComplete) {
+      this.quotes.splice(index,1);
+    }
+  }
 
   constructor() { }
 
