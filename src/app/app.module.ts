@@ -7,6 +7,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { UpvoteDirective } from './upvote.directive';
 import { DownvoteDirective } from './downvote.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DownvoteDirective } from './downvote.directive';
     QuoteComponent,
     QuoteDetailComponent,
     UpvoteDirective,
-    DownvoteDirective
+    DownvoteDirective,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

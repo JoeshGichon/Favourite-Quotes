@@ -1,6 +1,8 @@
 <div id="quote">
     <li *ngFor="let quote of quotes;let i = index">
+        <h1>Created on:{{ quote.createdDate|date|uppercase }}. </h1>
         <p>{{ quote.quote }}</p>
+        <h2>{{ quote.createdDate|dateCount}} days old</h2>
         <button (click)='toggleDetails(i)'>About</button>
         <div>
             <app-quote-detail *ngIf='quote.showDescription' [quoteAuthor]='quote ' (isComplete) = 'completeGoal($event,i)'></app-quote-detail>
