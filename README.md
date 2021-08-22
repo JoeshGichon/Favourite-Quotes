@@ -12,6 +12,11 @@ The application also contain a form component that enables user to create their 
 
 The application also gives the user the opportunity to delete a quote.
 
+## Project Link
+Below is the project deployed link
+
+https://joeshgichon.github.io/Favourite-Quotes/
+
 # Setup/Installation Requirements
 * HTML
 * CSS
