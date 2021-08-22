@@ -1,19 +1,27 @@
-<div class="container" id="quote">
-    <li *ngFor="let quote of quotes;let i = index">
-        <h1>Created on:{{ quote.createdDate|date|uppercase }}. </h1>
-        <p>{{ quote.quote }}</p>
-        <h2>{{ quote.createdDate|dateCount}} days old</h2>
-        <button (click)='toggleDetails(i) ' class="btn btn-info">About</button>
-        <div>
-            <app-quote-detail *ngIf='quote.showDescription' [quoteAuthor]='quote ' (isComplete) = 'completeGoal($event,i)'></app-quote-detail>
-        </div>
-        <button class="btn btn-success">Likes:{{ quote.upVote }}</button>
-        <button class="btn btn-dark">Dislikes:{{ quote.downVote }}</button>
-        <!-- <p appUpvote>Likes:{{ quote.upVote }}</p> -->
-        <!-- <p appDownvote>Dislikes:{{ quote.downVote }}</p> -->
-        <hr>
-    </li>
+<div class="container">
+    <div class="row" id="quote">
+        <div class="col-lg-6 col-md-6">
+        <li *ngFor="let quote of quotes;let i = index">
+            <h1>Created on:{{ quote.createdDate|date|uppercase }}. </h1>
+            <p id="quote">{{ quote.quote }}</p>
+            <h2>{{ quote.createdDate|dateCount}} days old</h2>
+            <button (click)='toggleDetails(i) ' class="btn btn-info">About</button>
+            <div>
+                <app-quote-detail *ngIf='quote.showDescription' [quoteAuthor]='quote ' (isComplete) = 'completeGoal($event,i)'></app-quote-detail>
+            </div>
+            <button class="btn btn-success">Likes:{{ quote.upVote }}</button>
+            <button class="btn btn-dark">Dislikes:{{ quote.downVote }}</button>
+            <!-- <p appUpvote>Likes:{{ quote.upVote }}</p> -->
+            <!-- <p appDownvote>Dislikes:{{ quote.downVote }}</p> -->
+            <hr>
+        </li>
+    </div>
+    </div>
 </div>
 <div class="container">
+<div class="row">
+    <div class="col-lg-6 col-md-6">
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div>
+</div>
 </div>
