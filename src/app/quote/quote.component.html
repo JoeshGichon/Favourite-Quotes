@@ -3,12 +3,14 @@
         <h1>Created on:{{ quote.createdDate|date|uppercase }}. </h1>
         <p>{{ quote.quote }}</p>
         <h2>{{ quote.createdDate|dateCount}} days old</h2>
-        <button (click)='toggleDetails(i)'>About</button>
+        <button (click)='toggleDetails(i) ' class="btn btn-info">About</button>
         <div>
             <app-quote-detail *ngIf='quote.showDescription' [quoteAuthor]='quote ' (isComplete) = 'completeGoal($event,i)'></app-quote-detail>
         </div>
-        <p appUpvote>Likes:{{ quote.upVote }}</p>
-        <p appDownvote>Dislikes:{{ quote.downVote }}</p>
+        <button class="btn btn-success">Likes:{{ quote.upVote }}</button>
+        <button class="btn btn-dark">Dislikes:{{ quote.downVote }}</button>
+        <!-- <p appUpvote>Likes:{{ quote.upVote }}</p> -->
+        <!-- <p appDownvote>Dislikes:{{ quote.downVote }}</p> -->
         <hr>
     </li>
 </div>
