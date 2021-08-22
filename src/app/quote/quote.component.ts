@@ -17,6 +17,10 @@ export class QuoteComponent implements OnInit {
     ),
   ]
 
+  addNewQuote(quote){
+    this.quotes.push(quote);
+  }
+
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
