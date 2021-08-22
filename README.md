@@ -56,9 +56,6 @@ For more information, you can reach me through the following emails:
 Also my mobile contact is as follows:
 *+254 797737128
 
-## project link 
-https://joeshgichon.github.io/Favourite-Quotes/
-
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
