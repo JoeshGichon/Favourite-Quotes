@@ -7,7 +7,11 @@ button{
 }
 li{
     border: 2px solid grey;
+    border-radius: 10px;
     box-shadow: 2px 2px 3px grey;
     padding: 1.6rem;
     margin: 1.9rem;
+}
+#quote{
+    text-align: center;
 }
