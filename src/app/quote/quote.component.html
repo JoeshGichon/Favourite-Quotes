@@ -9,8 +9,13 @@
             <div>
                 <app-quote-detail *ngIf='quote.showDescription' [quoteAuthor]='quote ' (isComplete) = 'completeGoal($event,i)'></app-quote-detail>
             </div>
-            <button class="btn btn-success">Likes:{{ quote.upVote }}</button>
-            <button class="btn btn-dark">Dislikes:{{ quote.downVote }}</button>
+            
+            <button class="btn btn-success" (click)="likeButtonClick()">Likes: {{ numberOfLikes }}</button>
+
+            <button class="btn btn-dark" (click)="DislikeButtonClick()">Dislikes {{ numberOfDislikes }}</button>
+            
+            <!-- <button class="btn btn-success">Likes:{{ quote.upVote }}</button> -->
+            <!-- <button class="btn btn-dark">Dislikes:{{ quote.downVote }}</button> -->
             <!-- <p appUpvote>Likes:{{ quote.upVote }}</p> -->
             <!-- <p appDownvote>Dislikes:{{ quote.downVote }}</p> -->
         </li>
